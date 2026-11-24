@@ -1,0 +1,6 @@
+udp_bridge:
+  ros__parameters:
+    esp32_ip: "ESP32_IP_HERE"
+    udp_port: 4210
+    # GPIO 18 uses the first slot. GPIO 19 uses the second slot.
+    servo_joints: [joint1, joint2, joint3, joint4]

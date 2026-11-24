@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>arm_hardware_bridge</name>
+  <version>0.1.0</version>
+  <description>UDP bridge for the ESP32.</description>
+  <maintainer email="maintainer@example.com">Lab 2 team</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_python</buildtool_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>trajectory_msgs</exec_depend>
+  <exec_depend>arm_control</exec_depend>
+  <export><build_type>ament_python</build_type></export>
+</package>
