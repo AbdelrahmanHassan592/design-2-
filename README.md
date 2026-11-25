@@ -23,18 +23,20 @@ RViz2. A Python bridge also sends commands over Wi-Fi to two servos on an ESP32.
 
 ## Arm geometry
 
-The figure is a schematic. At zero angles, the base and L1 stand along +Z.
-L2, L3, the wrist, and the tool point along +X. Joint 1 turns about +Z.
-Joints 2, 3, and 4 turn about their local +Y axes.
+At zero angles, the base, L1, and L2 stand along +Z. L3, the wrist, and
+the tool point along +X. The full side profile is 36.25 cm high and 20 cm
+wide, including the base. The wrist and tool together span 6 cm from L3
+to the tip. Joint 1 turns about +Z. Joints 2, 3, and 4 turn about their
+local +Y axes.
 
 | Link | Length or height (m) | Direction at zero |
 | --- | ---: | --- |
 | `base_link` | 0.08 | +Z |
 | `L1` | 0.12 | +Z |
-| `L2` | 0.15 | +X |
+| `L2` | 0.15 | +Z |
 | `L3` | 0.09 | +X |
 | `wrist_link` | 0.02 | +X |
-| `end_effector` | 0.06 | +X |
+| `end_effector` | 0.04 | +X |
 
 The chain is `base_link → joint1 → L1 → joint2 → L2 → joint3 → L3 → joint4
 → wrist_link → tool_mount → end_effector`. Joint 4 turns the wrist.
